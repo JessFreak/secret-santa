@@ -5,6 +5,8 @@ export const mainContainer: SxProps = {
   height: 'fit-content',
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
-  padding: '8% 10% 6% 6%',
   background: '#FFF',
+  alignItems: 'center',
+  justifyItems: 'center',
+  paddingTop: '30px'
 };

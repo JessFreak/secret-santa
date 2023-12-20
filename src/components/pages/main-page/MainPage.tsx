@@ -3,6 +3,7 @@ import ChristmasTime from './ChristmasTime/ChristmasTime';
 import Party from './Party/Party';
 import GiftItems from './GiftItems/GiftItems';
 import About from './About/About';
+import Join from './Join/Join';
 
 const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ const MainPage = () => {
       <Party />
       <GiftItems />
       <About />
+      <Join />
     </>
   );
 };
