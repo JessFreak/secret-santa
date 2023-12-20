@@ -1,7 +1,6 @@
 import { SxProps } from '@mui/system';
 
 export const mainContainer: SxProps = {
-  backgroundImage: 'url(/icons/ChristmasTime/bg.png)',
   width: '100vw',
   height: '100vh',
 };

@@ -6,6 +6,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'DM Sans', serif;
   }
+	
+	body {
+			background-image: url(/icons/ChristmasTime/bg.png);
+			z-index: -1;
+	}
 
   ::-webkit-scrollbar {
     width: 0;

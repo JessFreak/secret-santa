@@ -2,6 +2,7 @@ import React from 'react';
 import ChristmasTime from './ChristmasTime/ChristmasTime';
 import Party from './Party/Party';
 import GiftItems from './GiftItems/GiftItems';
+import About from './About/About';
 
 const MainPage = () => {
   return (
@@ -9,6 +10,7 @@ const MainPage = () => {
       <ChristmasTime />
       <Party />
       <GiftItems />
+      <About />
     </>
   );
 };
