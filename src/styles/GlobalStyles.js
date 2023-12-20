@@ -4,7 +4,11 @@ const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
-    font-family: 'DM Sans',serif;
+    font-family: 'DM Sans', serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
   }
 `;
 

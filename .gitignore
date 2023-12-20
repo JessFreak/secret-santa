@@ -3,3 +3,4 @@
 .next
 yarn.lock
 package-lock.json
+next-env.d.ts

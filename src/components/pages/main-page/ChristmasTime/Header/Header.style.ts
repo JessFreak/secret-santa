@@ -37,8 +37,3 @@ export const buttons: SxProps = {
   display: 'flex',
   gap: '10px',
 };
-
-export const button: SxProps = {
-  textTransform: 'none',
-}
-

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import Head from 'next/head'
 import GlobalStyle from '@/styles/GlobalStyles';
+import Head from 'next/head';
 
 interface LayoutProps {
   title: string;
