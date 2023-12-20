@@ -5,5 +5,5 @@ export const mainContainer: SxProps = {
   height: 'fit-content',
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
-  margin: '8% 10% 0 6%',
+  margin: '8% 10% 6% 6%',
 };

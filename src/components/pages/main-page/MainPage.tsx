@@ -1,12 +1,14 @@
 import React from 'react';
 import ChristmasTime from './ChristmasTime/ChristmasTime';
-import Party from '@/components/pages/main-page/Party/Party';
+import Party from './Party/Party';
+import GiftItems from './GiftItems/GiftItems';
 
 const MainPage = () => {
   return (
     <>
       <ChristmasTime />
       <Party />
+      <GiftItems />
     </>
   );
 };
