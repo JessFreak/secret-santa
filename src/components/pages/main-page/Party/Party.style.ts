@@ -3,7 +3,7 @@ import { SxProps } from '@mui/system';
 export const mainContainer: SxProps = {
   width: '100vw',
   height: 'fit-content',
-  background: 'linear-gradient(95deg, rgba(208, 244, 250, 0.6), #FFF, #FFF, rgba(208, 244, 250, 0.6))',
+  background: 'linear-gradient(120deg, #dbfcff, #FFF, #FFF, #dbfcff)',
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   alignItems: 'center',
