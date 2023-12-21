@@ -8,9 +8,7 @@ const Header = () => {
   return (
     <AppBar position='static' sx={styles.header}>
       <Toolbar sx={styles.header}>
-        <Box>
-          <Image src='/icons/ChristmasTime/logo.png' alt='logo' width={185} height={70} />
-        </Box>
+        <Image src='/icons/ChristmasTime/logo.png' alt='logo' width={185} height={70} style={{  cursor: 'pointer' }}/>
         <Box>
           <List sx={styles.list}>
             <Button sx={styles.firstListItem}>New</Button>

@@ -6,8 +6,14 @@ export const header: SxProps = {
   alignItems: 'center',
   padding: '10px',
   background: 'transparent',
-  gap: '15rem',
+  gap: '20rem',
   boxShadow: '0',
+  '@media (max-width: 1500px)': {
+    gap: '12rem',
+  },
+  '@media (max-width: 1250px)': {
+    gap: '8rem',
+  },
 };
 
 export const list: SxProps = {
