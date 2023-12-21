@@ -7,4 +7,5 @@ export const GreenButtonStyle: SxProps = {
   fontSize: '22px',
   fontWeight: 700,
   backgroundColor: 'green',
+  borderRadius: '8px',
 };

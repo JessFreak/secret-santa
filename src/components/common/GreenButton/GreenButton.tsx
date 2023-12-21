@@ -1,10 +1,11 @@
-import React, { PropsWithChildren } from 'react';
-import { GreenButtonStyle } from './GreenButton.style';
+import React from 'react';
 import { Button } from '@mui/material';
+import { ButtonProps } from '@mui/base';
+import { GreenButtonStyle } from './GreenButton.style';
 
-const GreenButton = (props: PropsWithChildren) => {
+const GreenButton = (props: ButtonProps) => {
   return (
-      <Button variant='contained' color='success' sx={GreenButtonStyle}>
+      <Button {...props} variant='contained' color='success' sx={GreenButtonStyle}>
         {props.children}
       </Button>
   );

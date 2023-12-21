@@ -4,6 +4,7 @@ import Party from './Party/Party';
 import GiftItems from './GiftItems/GiftItems';
 import About from './About/About';
 import Join from './Join/Join';
+import Footer from './Footer/Footer';
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       <GiftItems />
       <About />
       <Join />
+      <Footer />
     </>
   );
 };
