@@ -7,6 +7,7 @@ import ContentWithButton from '@/components/common/ContentWithButton/ContentWith
 const ChristmasTime = () => {
   return (
     <Box sx={styles.mainContainer}>
+      <Box sx={styles.hover}></Box>
       <Box sx={styles.light}></Box>
       <Header />
       <Box sx={styles.santaText}></Box>

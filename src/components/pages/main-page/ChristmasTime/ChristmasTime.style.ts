@@ -5,6 +5,14 @@ export const mainContainer: SxProps = {
   height: '100vh',
 };
 
+export const hover: SxProps = {
+  backgroundImage: 'url(/icons/ChristmasTime/hover.svg)',
+  width: '61px',
+  height: '7px',
+  position: 'absolute',
+  left: '40%',
+};
+
 export const light: SxProps = {
   backgroundImage: 'url(/icons/ChristmasTime/light.png)',
   width: '600px',
