@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Cookies from 'js-cookie';
-import { Box, FormControl, TextField, Typography } from '@mui/material';
+import MuiAlert from '@mui/material/Alert';
+import { Box, FormControl, TextField, Typography, Snackbar } from '@mui/material';
 import * as styles from './Join.style'
 import GreenButton from '@/components/common/GreenButton/GreenButton';
 
@@ -9,7 +10,9 @@ const Join = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
-
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+  const [snackbarSeverity, setSnackbarSeverity] = useState<'error' | 'success'>('success');
   const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -17,19 +20,31 @@ const Join = () => {
 
     if (registrants.length) {
       const randPreviousRegistrant = registrants[Math.floor(Math.random() * registrants.length)];
-      alert(JSON.stringify(randPreviousRegistrant));
+      setSnackbarSeverity('success');
+      setSnackbarMessage(`
+        Full name: ${randPreviousRegistrant.name}
+        Email: ${randPreviousRegistrant.email}
+        Subject: ${randPreviousRegistrant.subject}
+      `);
+      setOpenSnackbar(true);
     } else {
-      alert('Ми надішлемо вашого підопічного згодом');
+      setSnackbarSeverity('error');
+      setSnackbarMessage('Ми надішлемо вашого підопічного згодом')
+      setOpenSnackbar(true);
     }
 
     const currentRegistrant = { name, email, subject };
     const updatedRegistrants = [...registrants, currentRegistrant];
 
-    Cookies.set('registrants', JSON.stringify(updatedRegistrants));
+    Cookies.set('registrants', JSON.stringify(updatedRegistrants), {expires: 1});
 
     setName('');
     setEmail('');
     setSubject('');
+  };
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
   };
 
   return (
@@ -83,6 +98,11 @@ const Join = () => {
             </Box>
             <GreenButton type='submit'>Submit</GreenButton>
           </form>
+          <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
+            <MuiAlert elevation={6} variant="filled" onClose={handleCloseSnackbar} severity={snackbarSeverity}>
+              {snackbarMessage}
+            </MuiAlert>
+          </Snackbar>
         </Box>
       </Box>
       <Box>
