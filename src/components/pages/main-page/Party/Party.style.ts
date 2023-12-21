@@ -8,5 +8,13 @@ export const mainContainer: SxProps = {
   background: '#FFF',
   alignItems: 'center',
   justifyItems: 'center',
-  paddingTop: '30px'
+  paddingTop: '30px',
+  '& h1': {
+    width: '520px',
+    fontSize: '65px',
+  },
+  '& h5' : {
+    fontSize: '18px',
+    fontWeight: 400,
+  },
 };

@@ -26,6 +26,16 @@ export const content: SxProps = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  '& h1': {
+    color: '#333',
+    width: '550px',
+    fontSize: '75px',
+  },
+  '& h5': {
+    fontSize: '22px',
+    fontWeight: '400',
+    width: '560px',
+  },
 };
 
 export const santaBox: SxProps = {

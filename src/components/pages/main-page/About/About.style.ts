@@ -16,8 +16,20 @@ export const about: SxProps = {
   marginTop: '20%',
 };
 
+export const h2: SxProps = {
+  fontFamily: 'Yeseva One',
+  fontSize: '65px',
+  fontStyle: 'normal',
+  fontWeight: 'bold',
+  lineHeight: 'normal',
+  width: '500px',
+};
+
 export const icons: SxProps = {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   columnGap: '3rem',
+  '& h6': {
+    width: '237px',
+  },
 };

@@ -10,7 +10,7 @@ const About = () => {
       <Image alt='tree' src='/icons/About/big-tree.png' width={670} height={904}/>
       <Box sx={styles.about}>
         <Container>
-          <Typography variant='h2'>About the live event</Typography>
+          <Typography sx={styles.h2} variant='h2'>About the live event</Typography>
           <Typography variant='h6'>
             Fill your Christmas holiday with good cheer, joyful decorations, and unforgettable experience.
             Feel free to attend our Christmas event with your children and family and

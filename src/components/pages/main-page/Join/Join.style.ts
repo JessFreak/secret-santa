@@ -11,6 +11,30 @@ export const mainContainer: SxProps = {
   alignItems: 'center',
 };
 
+export const h2: SxProps = {
+  fontFamily: 'Yeseva One',
+  fontSize: '65px',
+  fontStyle: 'normal',
+  fontWeight: 'bold',
+  lineHeight: 'normal',
+};
+
+export const text: SxProps = {
+  width: '466px',
+};
+
+export const h3: SxProps = {
+  ...h2,
+  fontSize: '38px',
+};
+
+export const body1: SxProps = {
+  fontSize: '18px',
+  fontStyle: 'normal',
+  fontWeight: '400',
+  lineHeight: '34px',
+};
+
 export const form: SxProps = {
   marginTop: '20px',
   background: 'white',

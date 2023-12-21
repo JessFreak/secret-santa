@@ -13,7 +13,7 @@ const ContentWithIcon = ({ head, text, url }: ContentWithButtonProps) => {
   return (
     <Box>
       <Image src={url} alt={head} width={70} height={70}/>
-      <Typography variant='h3'>{head}</Typography>
+      <Typography sx={styles.head} variant='h3'>{head}</Typography>
       <Typography variant='h6' sx={styles.text}>{text}</Typography>
     </Box>
   );

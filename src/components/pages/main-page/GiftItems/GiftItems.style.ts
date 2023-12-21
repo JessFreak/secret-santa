@@ -12,6 +12,19 @@ export const mainContainer: SxProps = {
 export const gift: SxProps = {
   width: '750px',
   marginTop: '8%',
+  '& h2': {
+    fontFamily: 'Yeseva One',
+    fontSize: '65px',
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    lineHeight: 'normal',
+  },
+  '& h6': {
+    fontSize: '18px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '34px',
+  },
 };
 
 export const list: SxProps = {

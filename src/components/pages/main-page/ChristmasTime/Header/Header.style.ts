@@ -21,9 +21,9 @@ export const list: SxProps = {
 export const listItem: SxProps = {
   marginRight: '10px',
   color: 'black',
-  fontFamily: 'DM Sans',
   fontSize: '18px',
-  fontWeight: 600,
+  fontWeight: 700,
+  fontStyle: 'normal',
   lineHeight: 'normal',
   textTransform: 'none',
 };

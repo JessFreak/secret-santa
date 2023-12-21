@@ -35,11 +35,11 @@ const Join = () => {
   return (
     <Box sx={styles.mainContainer}>
       <Box>
-        <Typography variant='h2' fontWeight='bold'>Join the party</Typography>
+        <Typography sx={styles.h2} variant='h2'>Join the party</Typography>
         <Box sx={styles.form}>
-          <Box>
-            <Typography variant='h3' fontWeight='bold'>Contact Us</Typography>
-            <Typography variant='body1'>Please fill this form in a decent manner</Typography>
+          <Box sx={styles.text}>
+            <Typography sx={styles.h3} variant='h3' fontWeight='bold'>Contact Us</Typography>
+            <Typography sx={styles.body1} variant='body1'>Please fill this form in a decent manner</Typography>
           </Box>
           <form style={{ display: 'grid', rowGap: '30px' }} onSubmit={onSubmitHandler}>
             <Box sx={styles.giftBox}></Box>
@@ -51,6 +51,10 @@ const Join = () => {
                   label='Full Name'
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  inputProps={{
+                    pattern: '\\S.*'
+                  }}
+                  error={Boolean(name) && !name.match(/^\S.*$/)}
                 />
               </FormControl>
               <FormControl>
@@ -70,6 +74,10 @@ const Join = () => {
                   label='Subject'
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
+                  inputProps={{
+                    pattern: '\\S.*'
+                  }}
+                  error={Boolean(name) && !name.match(/^\S.*$/)}
                 />
               </FormControl>
             </Box>
